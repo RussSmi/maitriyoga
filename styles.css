@@ -193,7 +193,7 @@ nav {
 }
 
 /* ===================================
-   About Section
+   About Section (Homepage)
    =================================== */
 
 .about {
@@ -208,22 +208,25 @@ nav {
     color: var(--primary-color);
 }
 
-.about-content {
+.about .about-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
-    align-items: center;
+    align-items: start;
 }
 
-.about-text p {
+.about .about-text p {
     margin-bottom: 1.5rem;
     font-size: 1.1rem;
     line-height: 1.8;
 }
 
-.about-image img {
+.about .about-image img {
     border-radius: 8px;
     box-shadow: var(--shadow);
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* ===================================
@@ -395,11 +398,11 @@ nav {
     font-weight: 300;
 }
 
-.about-image {
+.about-page .about-image {
     text-align: center;
 }
 
-.about-image img {
+.about-page .about-image img {
     border-radius: 8px;
     width: 100%;
     max-width: 280px;
